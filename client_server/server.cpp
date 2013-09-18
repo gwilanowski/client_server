@@ -4,7 +4,7 @@
 int main()
 {
 	QTcpServer *tcpServer = new QTcpServer(); //creates TCP-based server
-	tcpServer->listen(QHostAddress("192.168.1.13"),5300); //listen on your IP adress, port 5300
+	tcpServer->listen(QHostAddress("172.16.254.1"),5300); //listen on your IP adress, port 5300
 	while ( tcpServer->isListening() )  //while server is listening
 	{	
 		QTcpSocket* tcpSocket; //define TCP-based socket
